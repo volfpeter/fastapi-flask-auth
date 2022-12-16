@@ -1,0 +1,46 @@
+metadata-version = "2.3"
+homepage = "https://github.com/volfpeter/fastapi-flask-auth"
+author = "Peter Volf"
+author-email = "do.volfp@gmail.com"
+
+[tool.black]
+line-length = 118
+
+[tool.mypy]
+show_error_codes = true
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[project]
+name = "fastapi-flask-auth"
+version = "0.1.0"
+description = "Lightweight FastAPI dependencies and authenticator that uses Flask session cookies for access control."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+dependencies = ["fastapi"]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Environment :: Web Environment",
+    "Framework :: FastAPI",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Internet :: WWW/HTTP",
+]
+
+[project.optional-dependencies]
+dev = ["black", "mypy"]
+decoder = ["flask-session-decoder"]

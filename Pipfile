@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+
+[dev-packages]
+mypy = "*"
+black = "*"
+build = "*"
+twine = "*"
+
+[requires]
+python_version = "3.10"
+
+[scripts]
+build = "python -m build"
+cleanup = "rm -rf dist && rm -rf fastapi-flask-auth.egg-info"
+publish = "twine upload dist/*"
