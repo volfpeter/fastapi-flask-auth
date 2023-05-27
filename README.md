@@ -10,7 +10,7 @@ Well, imagine that you have a Flask application that handles authentication (pro
 
 You can install the library from PyPI with `pip install fastapi-flask-auth`.
 
-You will also need to install a Flask session decoder. If you're looking for a lightweight, zero-dependency decoder, give `flask-session-decoder` a try. You can do this manually with `pip install flask-session-decoder` or you can install `fastapi-flask-auth` together with its default decoder dependency simply with `pip install fastapi-flask-auth[decoder]`.
+You will also need to install a Flask session decoder. If you're looking for a lightweight, zero-dependency decoder, give `flask-session-decoder` (see [here](https://github.com/volfpeter/flask-session-decoder)) a try. You can do this manually with `pip install flask-session-decoder` or you can install `fastapi-flask-auth` together with its default decoder dependency simply with `pip install fastapi-flask-auth[decoder]`.
 
 With both `fastapi-flask-auth` and `flask-session-decoder` in place, you can set up the authenticator for your FastAPI application like this:
 
